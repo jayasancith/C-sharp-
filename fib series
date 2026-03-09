@@ -1,0 +1,22 @@
+using System;
+
+public class FibonacciExample
+{
+    public static void Main()
+    {
+        Console.Write("Enter the number of terms: ");
+        int len = int.Parse(Console.ReadLine());
+        
+        int a = 0, b = 1, c;
+
+        Console.Write($"{a} {b} "); // Print the first two terms
+
+        for (int i = 2; i < len; i++)
+        {
+            c = a + b;
+            Console.Write($"{c} ");
+            a = b; // Move 'b' to 'a'
+            b = c; // Move the sum 'c' to 'b'
+        }
+    }
+}
