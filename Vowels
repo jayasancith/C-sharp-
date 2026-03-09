@@ -1,0 +1,24 @@
+using System;
+
+public class Program
+{
+    public static void Main()
+    {
+        Console.Write("Enter a character: ");
+        char input = char.ToLower(Console.ReadKey().KeyChar);
+        Console.WriteLine();
+
+        if (input == 'a' || input == 'e' || input == 'i' || input == 'o' || input == 'u')
+        {
+            Console.WriteLine($"{input} is a vowel.");
+        }
+        else if (char.IsLetter(input))
+        {
+            Console.WriteLine($"{input} is a consonant.");
+        }
+        else
+        {
+            Console.WriteLine("Invalid input.");
+        }
+    }
+}
