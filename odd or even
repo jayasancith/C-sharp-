@@ -1,0 +1,19 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Enter a number: ");
+        int input = int.Parse(Console.ReadLine());
+
+        if (input % 2 == 0)
+        {
+            Console.WriteLine($"{input} is Even.");
+        }
+        else
+        {
+            Console.WriteLine($"{input} is Odd.");
+        }
+    }
+}
