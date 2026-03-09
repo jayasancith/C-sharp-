@@ -1,0 +1,21 @@
+using System;
+
+public class Program
+{
+    public static void Main()
+    {
+        string input = "Hello";
+        char[] characters = input.ToCharArray();
+        int length = characters.Length;
+
+        for (int i = 0; i < length / 2; i++)
+        {
+            char temp = characters[i];
+            characters[i] = characters[length - i - 1];
+            characters[length - i - 1] = temp;
+        }
+
+        string reversed = new string(characters);
+        Console.WriteLine(reversed);
+    }
+}
